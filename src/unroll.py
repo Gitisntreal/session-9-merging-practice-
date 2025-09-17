@@ -1,6 +1,9 @@
 class Person:
-    name="John Doe"
-    friends=[]
+    DEFULT_NAME = "John Doe"
+
+    def __init__(self,name = DEFULT_NAME):
+        self.name = name
+        self.friends = []
 
     def addFriend(self,other_person):
         self.friends.append(other_person)
